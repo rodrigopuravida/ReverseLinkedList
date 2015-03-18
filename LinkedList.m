@@ -19,5 +19,18 @@
     return self;
 }
 
+- (NSString *)toString {
+    NSString *data = @"";
+    LinkedList *current = self;
+    
+    do {
+        data = [[NSString stringWithFormat:@"%d", current.value] stringByAppendingString:@","];
+        
+        current = current.next;
+    } while (current != nil);
+    
+    return data;
+
+}
 
 @end

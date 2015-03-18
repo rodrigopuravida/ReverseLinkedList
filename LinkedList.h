@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface LinkedList : NSObject
+
+-(NSString *) toString;
+
+
 @property (strong, nonatomic) LinkedList *next;
 @property (assign, nonatomic) int value;
 
