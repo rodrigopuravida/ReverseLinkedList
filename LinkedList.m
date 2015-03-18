@@ -30,7 +30,6 @@
     } while (current != nil);
     
     return data;
-
 }
 
 @end
