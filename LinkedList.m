@@ -39,9 +39,19 @@
     if (linkedList == nil || linkedList.next == nil)
         return linkedList;
     
+    LinkedList *prevNode = nil;
+    LinkedList *curNode = linkedList;
+    LinkedList *nextNode = nil;
     
+    while (curNode != nil) {
+        nextNode = curNode.next;
+        curNode.next = prevNode;
+        prevNode = curNode;
+        curNode = nextNode;
+    }
     
-    
+    return prevNode;
+
 }
 
 @end
