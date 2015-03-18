@@ -32,4 +32,16 @@
     return data;
 }
 
+-(LinkedList *)iterativeReverse:(LinkedList *)linkedList {
+    
+    // check for empty or size 1 linked list. This is a base condition to
+    // terminate recursion.
+    if (linkedList == nil || linkedList.next == nil)
+        return linkedList;
+    
+    
+    
+    
+}
+
 @end

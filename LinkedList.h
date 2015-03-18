@@ -11,6 +11,10 @@
 @interface LinkedList : NSObject
 
 -(NSString *) toString;
+- (LinkedList *) iterativeReverse: (LinkedList *) linkedList;
+
+
+//public static LinkedList recursiveReverse(LinkedList linkedList)
 
 
 @property (strong, nonatomic) LinkedList *next;
