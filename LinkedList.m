@@ -36,7 +36,7 @@
 
 -(LinkedList *)iterativeReverse:(LinkedList *)linkedList {
     
-    // check for empty or size 1 linked list.
+    // check for empty or size 1 linked list
     if (linkedList == nil || linkedList.next == nil)
         return linkedList;
     
