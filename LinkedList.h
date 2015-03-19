@@ -10,6 +10,7 @@
 
 @interface LinkedList : NSObject
 
+-(instancetype)initWithSize:(int)value;
 -(NSString *) toString;
 - (LinkedList *) iterativeReverse: (LinkedList *) linkedList;
 

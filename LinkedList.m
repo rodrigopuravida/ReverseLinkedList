@@ -21,11 +21,13 @@
 
 - (NSString *)toString {
     NSString *data = @"";
+    NSString *tempData = @"";
     LinkedList *current = self;
     
     do {
-        data = [[NSString stringWithFormat:@"%d", current.value] stringByAppendingString:@","];
-        
+        tempData = [[NSString stringWithFormat:@"%d", current.value] stringByAppendingString:@","];
+        data = [data stringByAppendingString:tempData];
+        //NSLog( @"%@", data);
         current = current.next;
     } while (current != nil);
     
